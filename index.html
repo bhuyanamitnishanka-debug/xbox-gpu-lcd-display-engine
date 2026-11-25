@@ -94,6 +94,12 @@
         color: var(--cyan);
       }
 
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
       .hero {
         display: grid;
         min-height: 580px;
@@ -463,6 +469,30 @@
         background: linear-gradient(110deg, rgba(34, 91, 102, 0.22), rgba(31, 31, 65, 0.3));
       }
 
+      .contribution-card {
+        max-width: 860px;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--panel);
+      }
+
+      .contribution-card p {
+        margin-bottom: 14px;
+        color: var(--muted);
+        font-size: 0.93rem;
+      }
+
+      .contribution-card p:first-child {
+        color: var(--ink);
+        font-weight: 650;
+      }
+
+      .contribution-card .contribution-signoff {
+        margin-bottom: 0;
+        color: var(--cyan);
+      }
+
       .closing h2 {
         margin-bottom: 5px;
         font-size: clamp(1.35rem, 3vw, 1.8rem);
@@ -552,6 +582,10 @@
           font-size: 0.77rem;
         }
 
+        .site-nav {
+          gap: 12px;
+        }
+
         .nav-link {
           font-size: 0.78rem;
         }
@@ -623,12 +657,15 @@
         <span class="brand-mark" aria-hidden="true">XG</span>
         <span>Xbox GPU LCD Display Engine</span>
       </a>
-      <a
-        class="nav-link"
-        href="https://github.com/bhuyanamitnishanka-debug/xbox-gpu-lcd-display-engine"
-        target="_blank"
-        rel="noreferrer"
-      >View on GitHub <span aria-hidden="true">↗</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#contribute">Contribute</a>
+        <a
+          class="nav-link"
+          href="https://github.com/bhuyanamitnishanka-debug/xbox-gpu-lcd-display-engine"
+          target="_blank"
+          rel="noreferrer"
+        >View on GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
     </header>
 
     <main>
@@ -727,6 +764,38 @@
             <h3>Design &amp; 3D workflows</h3>
             <p>The project description also references Canva and Figma UI design, alongside Adobe 3D workflows.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="shell section" id="contribute" aria-labelledby="contribute-title">
+        <div class="section-heading">
+          <h2 id="contribute-title">Everyone is welcome to contribute.</h2>
+          <p>Code, documentation, examples, tests, design ideas, and thoughtful questions can all help this project grow.</p>
+        </div>
+        <div class="contribution-card">
+          <p>Dear future contributor,</p>
+          <p>
+            Whatever your background or experience, you are welcome here. If you have an improvement,
+            an idea, or a question, your perspective can help move the project forward. Open an issue
+            to discuss a larger idea, or send a focused pull request with a short explanation of your
+            change. Please be respectful, share any checks you ran, and be open to review feedback.
+          </p>
+          <p>Thank you for helping this project grow.</p>
+          <p class="contribution-signoff">With appreciation,<br>the Xbox GPU LCD Display Engine community</p>
+          <div class="actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/bhuyanamitnishanka-debug/xbox-gpu-lcd-display-engine/issues/new"
+              target="_blank"
+              rel="noreferrer"
+            >Start a discussion <span aria-hidden="true">↗</span></a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/bhuyanamitnishanka-debug/xbox-gpu-lcd-display-engine/pulls"
+              target="_blank"
+              rel="noreferrer"
+            >Browse pull requests <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
 
